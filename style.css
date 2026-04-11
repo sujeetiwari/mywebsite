@@ -435,7 +435,7 @@ body {
 
 /* Card */
 .review-card {
-  background: beige;
+  border: 1px solid gold;
   padding: 40px 25px 25px;
   border-radius: 16px;
   position: relative;
@@ -466,7 +466,7 @@ body {
 /* Text */
 .review-card p {
   margin-top: 30px;
-  color: #555;
+  color:white;
   font-size: 15px;
   line-height: 1.7;
 }
@@ -474,7 +474,7 @@ body {
 /* Name */
 .review-card h5 {
   margin-top: 15px;
-  color: #ff6b6b;
+  color: gold;
   font-weight: bold;
 }
 
