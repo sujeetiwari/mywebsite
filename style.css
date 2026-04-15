@@ -1267,3 +1267,29 @@ body {
     justify-content: space-between;
     color: #fff;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .fixed-footer {
+        padding: 10px 12px;
+    }
+
+    .footer-content {
+        flex-direction: column;     /* stack items */
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .footer-content span {
+        font-size: 13px;
+    }
+
+    .cta-btn {
+        width: 100%;              /* full width button */
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+}
