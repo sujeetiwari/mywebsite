@@ -1186,7 +1186,7 @@ body {
 }
 
 .cta-btn {
-  background: #d4a017;
+background: linear-gradient(90deg, #d4af37, #ffd700);   
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
@@ -1305,8 +1305,8 @@ body {
         padding: 12px;
         font-size: 14px;
         border-radius: 10px;
-        background: linear-gradient(90deg, #2563eb, #10b981);
-        color: #fff;
+background: linear-gradient(90deg, #d4af37, #ffd700);   
+     color: #fff;
         border: none;
     }
 
@@ -1314,7 +1314,7 @@ body {
         width: 45px;
         height: 45px;
         border-radius: 10px;
-        background: #0b5ed7;
+        background: gold;
         display: flex;
         align-items: center;
         justify-content: center;
