@@ -1268,28 +1268,57 @@ body {
     color: #fff;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
 
-    .fixed-footer {
-        padding: 10px 12px;
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .footer-content {
-        flex-direction: column;     /* stack items */
-        align-items: center;
-        text-align: center;
+    /* Top info row */
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
         gap: 8px;
     }
 
-    .footer-content span {
-        font-size: 13px;
+    .footer-info span {
+        flex: 1;
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 8px;
+        text-align: center;
+        background: #111;
+        border: 1px solid #333;
+    }
+
+    /* Bottom CTA row */
+    .footer-bottom {
+        display: flex;
+        gap: 8px;
+        align-items: center;
     }
 
     .cta-btn {
-        width: 100%;              /* full width button */
-        padding: 10px;
+        flex: 1;
+        padding: 12px;
         font-size: 14px;
-        border-radius: 6px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #2563eb, #10b981);
+        color: #fff;
+        border: none;
+    }
+
+    .scroll-top {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        background: #0b5ed7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
     }
 }
