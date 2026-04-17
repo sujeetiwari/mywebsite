@@ -8,9 +8,7 @@ body {
       padding-bottom: 100px; /* equal or more than footer height */
 
 }
-html{
-  overflow-x: hidden;
-}
+
 .hero-section {
   padding: 20px 0;
   background: radial-gradient(circle, #0a0a0a, #000);
@@ -1311,42 +1309,30 @@ background: linear-gradient(90deg, #d4af37, #ffd700);
         border: none;
     }
 
-    .scroll-top {
-        width: 45px;
-        height: 45px;
-        border-radius: 10px;
-        background: gold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        cursor: pointer;
-    }
-}
-
-.logo-section {
-  padding: 40px 0;
-}
-
+    
+/* SLIDER */
 .logo-slider {
+  width: 100%;
   overflow: hidden;
   position: relative;
-  width: 100%;
 }
 
+/* TRACK */
 .logo-track {
   display: flex;
   width: max-content;
-  animation: scroll 20s linear infinite;
+  animation: scroll 25s linear infinite;
 }
 
+/* IMAGES */
 .logo-track img {
   height: 60px;
-  margin: 0 30px;
+  margin: 0 25px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
-/* Animation */
+/* SMOOTH CONTINUOUS ANIMATION */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -1356,10 +1342,15 @@ background: linear-gradient(90deg, #d4af37, #ffd700);
   }
 }
 
-/* Mobile Responsive */
+/* MOBILE */
 @media (max-width: 768px) {
   .logo-track img {
     height: 40px;
     margin: 0 15px;
   }
+}
+
+/* OPTIONAL: pause on hover */
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
 }
