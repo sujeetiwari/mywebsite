@@ -468,13 +468,20 @@ body {
 /* CARD */
 .review-card {
   min-width: 350px;
+  max-width: 350px; /* 👈 VERY IMPORTANT */
+  flex-shrink: 0;   /* 👈 stops flex shrinking */
   background: #111;
   border-radius: 18px;
   padding: 25px;
   border: 1px solid #222;
   box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
 }
-
+.review-card h3,
+.review-card p {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 /* HEADER */
 .review-header {
   display: flex;
