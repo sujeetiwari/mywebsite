@@ -1322,3 +1322,43 @@ background: linear-gradient(90deg, #d4af37, #ffd700);
         cursor: pointer;
     }
 }
+
+.logo-section {
+  padding: 20px 0;
+}
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-track img {
+  height: 60px;
+  margin: 0 20px;
+  object-fit: contain;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .logo-track img {
+    height: 40px;
+    margin: 0 15px;
+  }
+}
