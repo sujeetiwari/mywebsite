@@ -234,17 +234,16 @@ body {
 
 /* PROBLEM CARDS */
 .problem-card {
-  max-width: 500px;   /* control card width */
-    width: 100%;
-    margin: 15px auto;  /* centers + adds left/right space */
-    padding: 18px 20px;
-    border-radius: 12px;
+  max-width: 500px;
+  width: calc(100% - 20px); /* 👈 creates left-right space */
+  margin: 15px auto;
+  padding: 18px 20px;
+  border-radius: 12px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255, 215, 0, 0.2);
   font-size: 16px;
   transition: 0.3s;
-      box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
-
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
 }
 
 .problem-card:hover {
