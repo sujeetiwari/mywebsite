@@ -235,7 +235,7 @@ body {
 /* PROBLEM CARDS */
 .problem-card {
   max-width: 500px;
-  width: calc(100% - 20px); /* 👈 creates left-right space */
+  width: calc(100% - 30px); /* 👈 creates left-right space */
   margin: 15px auto;
   padding: 18px 20px;
   border-radius: 12px;
